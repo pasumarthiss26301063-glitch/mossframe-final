@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f1e7">
+  <meta name="description" content="MossFrame helps you explore visual inspiration by topic.">
+  <title>MossFrame — Find your next visual idea</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-mark">m</span>
+      <span>MossFrame<span class="brand-period">.</span></span>
+    </a>
+    <span class="header-note">
+      <span class="status-dot"></span> A little inspiration, in focus
+    </span>
+  </header>
+
+  <main id="top" class="page-shell">
+
+    <section class="intro">
+      <p class="eyebrow">YOUR VISUAL FIELD GUIDE ✳</p>
+
+      <h1>Follow a thought.<br><em>Find a feeling.</em></h1>
+
+      <p class="intro-copy">
+        From faraway places to tiny everyday details,
+        search for images that spark your next idea.
+      </p>
+
+      <div class="search-panel">
+        <label for="searchInput">What would you like to discover?</label>
+
+        <form id="searchForm" class="search-row">
+          <div class="input-wrap">
+            <svg class="search-icon" viewBox="0 0 24 24">
+              <circle cx="10.8" cy="10.8" r="6.8"></circle>
+              <path d="m16 16 4.5 4.5"></path>
+            </svg>
+
+            <input
+              id="searchInput"
+              name="q"
+              type="search"
+              placeholder="Try quiet beaches or retro interiors"
+              autocomplete="off"
+            >
+          </div>
+
+          <button id="searchButton" type="submit">
+            Search <span>↗</span>
+          </button>
+        </form>
+
+        <p class="search-hint">
+          A keyword is all you need. Let curiosity lead.
+        </p>
+      </div>
+
+      <div class="quick-picks">
+        <span class="quick-picks-label">START WITH</span>
+
+        <div class="chip-row">
+          <button class="chip chip-sage" type="button">Nature ↗</button>
+          <button class="chip chip-clay" type="button">Architecture ↗</button>
+          <button class="chip chip-sky" type="button">Slow living ↗</button>
+          <button class="chip chip-sand" type="button">Textures ↗</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section">
+
+      <div class="results-topline">
+        <div>
+          <p class="eyebrow results-eyebrow">YOUR COLLECTION</p>
+          <h2 id="results-heading">A canvas for discovery</h2>
+        </div>
+
+        <p id="resultCount" class="result-count">
+          0 images · Ready when you are
+        </p>
+      </div>
+
+      <div
+        id="results"
+        class="results-grid"
+        aria-live="polite"
+        aria-label="Image search results">
+      </div>
+
+      <div id="emptyState" class="empty-state">
+        <div class="empty-art">
+          <span class="sun"></span>
+          <span class="hill hill-back"></span>
+          <span class="hill hill-front"></span>
+          <span class="art-spark spark-one">✳</span>
+          <span class="art-spark spark-two">✦</span>
+        </div>
+
+        <p class="empty-title">Your next idea starts here.</p>
+
+        <p class="empty-copy">
+          Search a subject above and your visual collection
+          will take shape here.
+        </p>
+      </div>
+
+    </section>
+
+    <footer class="site-footer">
+      <span>MADE FOR THE CURIOUS</span>
+      <span>Take the scenic route ↗</span>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
